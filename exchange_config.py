@@ -96,8 +96,8 @@ def printerror(**args):
     if 'name_of_data' in list(args.keys()) and 'data' in list(args.keys()) and 'm' in list(args.keys()):
         append_new_line("logs/logs.txt",f"{get_time_blank()} ERROR: {args['m']} | {args['name_of_data']}: {args['data']}")
 
-    elif 'name_of_data' in list(args.keys()) and 'data' in list(args.keys()):
-        append_new_line("logs/logs.txt",f"{get_time_blank()} ERROR | {args['name_of_data']}: {args['data']}")
+    # elif 'name_of_data' in list(args.keys()) and 'data' in list(args.keys()):
+    #     append_new_line("logs/logs.txt",f"{get_time_blank()} ERROR | {args['name_of_data']}: {args['data']}")
 def emergency_convert_list(pair_to_sell,exlist):
     i=0
     for echange in exlist:
