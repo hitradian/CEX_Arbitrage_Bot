@@ -50,7 +50,7 @@ def send_to_telegram(message):
     apiURL = f'https://api.telegram.org/bot{apiToken}/sendMessage'
     try:
         if telegram_sending:
-            response = requests.post(apiURL, json={'chat_id': chatID, 'text': message}) # put this if you want to send telegram messages.
+            # response = requests.post(apiURL, json={'chat_id': chatID, 'text': message}) # put this if you want to send telegram messages.
         else:
             pass
     except Exception as e:
