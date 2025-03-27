@@ -42,7 +42,7 @@ def moy(list1):
         moy+=n
     return moy/len(list1)
 def send_to_telegram(message):
-    # message = message.replace("[2m","")
+    message = message.replace("[2m","")
     message = message.replace("[0m","")
     message = message.replace("[2m","")
     message = message.replace("[32m","")
