@@ -141,11 +141,11 @@ def get_precision_min(pair,exchange_str):
     pair_info = ex[exchange_str].load_markets(pair)
     grail = pair_info[pair]['limits']['price']['min']
     return grail
-# def get_time():
-#     tz = pytz.timezone(timezone)
-#     now = datetime.datetime.now(tz)
-#     dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
-#     return f"{Style.DIM}{dtf}{Style.RESET_ALL}"
+def get_time():
+    tz = pytz.timezone(timezone)
+    now = datetime.datetime.now(tz)
+    dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
+    return f"{Style.DIM}{dtf}{Style.RESET_ALL}"
 def get_time_blank():
     tz = pytz.timezone(timezone)
     now = datetime.datetime.now(tz)
