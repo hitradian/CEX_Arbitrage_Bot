@@ -130,10 +130,10 @@ def get_balance(exchange,pair):
     if pair[-5:] == '/USDT':
         pair = pair[:-5]
     balance=ex[exchange].fetch_balance()
-    # if balance[pair]['free'] != 0:
-    #     return balance[pair]['free']
-    # else:
-    #     return 0
+    if balance[pair]['free'] != 0:
+        return balance[pair]['free']
+    else:
+        return 0
     
 ex = {n:getattr(ccxt,n)(exchanges[n]) for n in exchanges}
 
