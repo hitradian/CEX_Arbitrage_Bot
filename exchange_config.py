@@ -121,8 +121,8 @@ def emergency_convert_list(pair_to_sell,exlist):
             #     print(f"{get_time()} Not enough {pair_to_sell[:len(pair_to_sell)-5]} on {echange}.")
             #     append_new_line('logs/logs.txt',f"{get_time_blank()} INFO: Successfully sold {bal} {pair_to_sell[:len(pair_to_sell)-5]} on {echange}.")
             # i+=1
-        # except Exception as e:
-        #     printerror(m=f'{get_time()} Error while selling {pair_to_sell} on {echange}. Error: {e}',)
+        except Exception as e:
+            printerror(m=f'{get_time()} Error while selling {pair_to_sell} on {echange}. Error: {e}',)
 def printandtelegram(message):
     print(message)
     send_to_telegram(message)
