@@ -16,10 +16,10 @@ exchanges = {
     'binance':{},
     'okx':{},
     'poloniex':{},
-    'another_exchange_here':{
-        'apiKey':'here',
-        'secret':'here',
-    },
+    # 'another_exchange_here':{
+    #     'apiKey':'here',
+    #     'secret':'here',
+    # },
 }
 
 telegram_sending = False
