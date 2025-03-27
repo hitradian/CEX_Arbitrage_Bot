@@ -8,5 +8,5 @@ api_credentials = {
 }
 api_credentials = {
     'apiKey':'ox132',
-    # 'secret':'oxb52',
+    'secret':'oxb32',
 }
