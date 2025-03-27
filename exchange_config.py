@@ -149,7 +149,7 @@ def get_time():
 def get_time_blank():
     tz = pytz.timezone(timezone)
     now = datetime.datetime.now(tz)
-    dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
+    # dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
     return dtf
 def get_balance_usdt(ex_list_str:list):
     usdt_balance = 0
