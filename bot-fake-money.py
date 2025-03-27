@@ -103,9 +103,9 @@ ordersFilled = 0
 
 while ordersFilled != len(echanges):
 
-    if s==1:
-        sys.exit(1)
-    usd = {exchange:(howmuchusd/2)/len(echanges) for exchange in echanges_str}
+    # if s==1:
+    #     sys.exit(1)
+    # usd = {exchange:(howmuchusd/2)/len(echanges) for exchange in echanges_str}
 
     total_usd = 0
     for exc in echanges_str:
