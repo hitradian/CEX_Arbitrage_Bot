@@ -6,3 +6,7 @@ api_credentials = {
     'apiKey':'here',
     'secret':'here',
 }
+api_credentials = {
+    'apiKey':'here',
+    'secret':'here',
+}
