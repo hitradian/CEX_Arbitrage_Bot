@@ -137,10 +137,10 @@ def get_balance(exchange,pair):
     
 ex = {n:getattr(ccxt,n)(exchanges[n]) for n in exchanges}
 
-def get_precision_min(pair,exchange_str):
-    pair_info = ex[exchange_str].load_markets(pair)
-    grail = pair_info[pair]['limits']['price']['min']
-    return grail
+# def get_precision_min(pair,exchange_str):
+#     pair_info = ex[exchange_str].load_markets(pair)
+#     grail = pair_info[pair]['limits']['price']['min']
+#     return grail
 def get_time():
     tz = pytz.timezone(timezone)
     now = datetime.datetime.now(tz)
@@ -153,7 +153,7 @@ def get_time_blank():
     return dtf
 def get_balance_usdt(ex_list_str:list):
     usdt_balance = 0
-    for excha in ex_list_str:
-        balances = ex[excha].fetchBalance()
-        usdt_balance+=balances['USDT']['free']
-    return float(usdt_balance)
+    # for excha in ex_list_str:
+    #     balances = ex[excha].fetchBalance()
+    #     usdt_balance+=balances['USDT']['free']
+    # return float(usdt_balance)
