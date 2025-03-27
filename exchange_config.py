@@ -146,11 +146,11 @@ ex = {n:getattr(ccxt,n)(exchanges[n]) for n in exchanges}
 #     now = datetime.datetime.now(tz)
 #     dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
 #     return f"{Style.DIM}{dtf}{Style.RESET_ALL}"
-def get_time_blank():
-    tz = pytz.timezone(timezone)
-    now = datetime.datetime.now(tz)
-    dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
-    return dtf
+# def get_time_blank():
+#     tz = pytz.timezone(timezone)
+#     now = datetime.datetime.now(tz)
+#     dtf = now.strftime("[%d/%m/%Y  %H:%M:%S]")
+#     return dtf
 # def get_balance_usdt(ex_list_str:list):
 #     usdt_balance = 0
 #     for excha in ex_list_str:
