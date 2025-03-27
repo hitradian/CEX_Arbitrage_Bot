@@ -6,7 +6,7 @@ api_credentials = {
     'apiKey':'here',
     'secret':'here',
 }
-api_credentials = {
-    'apiKey':'ox132',
+api_credentials_dex = {
+    'apiKey':'ox322',
     'secret':'oxb32',
 }
