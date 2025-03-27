@@ -65,8 +65,8 @@ def append_list_file(fichier, nouvel_element):
 
     liste.append(nouvel_element)
 
-    # with open(fichier, 'w') as file:
-    #     file.write(str(liste))
+    with open(fichier, 'w') as file:
+        file.write(str(liste))
 def append_new_line(file_name, text_to_append):
     import os
     """Appends a new line to a text file, creating directories if necessary.
