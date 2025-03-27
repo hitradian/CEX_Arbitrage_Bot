@@ -109,7 +109,7 @@ def emergency_convert_list(pair_to_sell,exlist):
             bal = get_balance(echange,pair_to_sell)
             m = ex[echange].load_markets()
             t=ex[echange].fetch_ticker(pair_to_sell)
-            # m[pair_to_sell]['limits']['cost']['min'] = 0 if type(m[pair_to_sell]['limits']['cost']['min'])!=float and type(m[pair_to_sell]['limits']['cost']['min'])!=int else m[pair_to_sell]['limits']['cost']['min']
+            m[pair_to_sell]['limits']['cost']['min'] = 0 if type(m[pair_to_sell]['limits']['cost']['min'])!=float and type(m[pair_to_sell]['limits']['cost']['min'])!=int else m[pair_to_sell]['limits']['cost']['min']
             m[pair_to_sell]['limits']['amount']['min'] = 0 if type(m[pair_to_sell]['limits']['amount']['min'])!=float and type(m[pair_to_sell]['limits']['amount']['min'])!=int else m[pair_to_sell]['limits']['amount']['min']
             m[pair_to_sell]['limits']['cost']['max'] = 10e13 if type(m[pair_to_sell]['limits']['cost']['max'])!=float and type(m[pair_to_sell]['limits']['cost']['max'])!=int else m[pair_to_sell]['limits']['cost']['max']
             m[pair_to_sell]['limits']['amount']['max'] = 10e13 if type(m[pair_to_sell]['limits']['amount']['max'])!=float and type(m[pair_to_sell]['limits']['amount']['max'])!=int else m[pair_to_sell]['limits']['amount']['max']
