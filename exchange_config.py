@@ -153,7 +153,7 @@ def get_time_blank():
     return dtf
 def get_balance_usdt(ex_list_str:list):
     usdt_balance = 0
-    for excha in ex_list_str:
-        balances = ex[excha].fetchBalance()
-        usdt_balance+=balances['USDT']['free']
-    return float(usdt_balance)
+    # for excha in ex_list_str:
+    #     balances = ex[excha].fetchBalance()
+    #     usdt_balance+=balances['USDT']['free']
+    # return float(usdt_balance)
