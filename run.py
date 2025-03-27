@@ -29,11 +29,11 @@ try:
             balance=output[1]
             pair = output[2]
             ex_list = output[3]
-        # else:
-        #     renew_time = output[1]
-        #     balance=output[2]
-        #     pair = output[3]
-        #     ex_list = output[4]
+        else:
+            renew_time = output[1]
+            balance=output[2]
+            pair = output[3]
+            ex_list = output[4]
 
         if mode!='fake-money':
             real_balance=0
