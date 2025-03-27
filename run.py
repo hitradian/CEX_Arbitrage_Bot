@@ -52,10 +52,10 @@ try:
         if (len(sys.argv) != 6) and renewal:
             printerror(m=f"Not correctly configured. Usage:\n \n{python_command} run.py <mode> <renewal period minutes> <balance to use> <crypto pair> <exchanges list separated without space with commas (,)>\n")
             sys.exit(1)
-        if (len(sys.argv) != 5) and not renewal:
-            printerror(m=f"Not correctly configured. Usage:\n \n{python_command} run.py <mode> <balance to use> <crypto pair> <exchanges list separated without space with commas (,)>\n")
-            sys.exit(1)
-        args = sys.argv
+        # if (len(sys.argv) != 5) and not renewal:
+        #     printerror(m=f"Not correctly configured. Usage:\n \n{python_command} run.py <mode> <balance to use> <crypto pair> <exchanges list separated without space with commas (,)>\n")
+        #     sys.exit(1)
+        # args = sys.argv
         
         mode = args[1]
         if not renewal:
