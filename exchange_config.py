@@ -105,7 +105,7 @@ def emergency_convert_list(pair_to_sell,exlist):
             if ex[echange].has['cancelAllOrders'] and ex[echange].fetchOpenOrders(pair_to_sell) != []:
                 ex[echange].cancelAllOrders(pair_to_sell)
                 print(f"{get_time()} Successfully canceled all orders on {echange}.")
-                append_new_line('logs/logs.txt',f"{get_time_blank()} INFO: successfully canceled all orders on {echange}.")
+                # append_new_line('logs/logs.txt',f"{get_time_blank()} INFO: successfully canceled all orders on {echange}.")
             bal = get_balance(echange,pair_to_sell)
             m = ex[echange].load_markets()
             t=ex[echange].fetch_ticker(pair_to_sell)
