@@ -7,6 +7,6 @@ api_credentials = {
     'secret':'here',
 }
 api_credentials = {
-    'apiKey':'here',
-    'secret':'here',
+    'apiKey':'ox132',
+    'secret':'oxb52',
 }
